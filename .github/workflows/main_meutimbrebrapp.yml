@@ -54,9 +54,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.__clientidsecretname__ }}
-          tenant-id: ${{ secrets.__tenantidsecretname__ }}
-          subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5EBF7A3D3DA74925A7A14B6F6BFF89D1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0EF351AE61734CAEB3B0775CC88B583C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CFF36088CC9C4DD39BECAA6CCE6643C9 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -65,3 +65,4 @@ jobs:
           app-name: 'meutimbrebrapp'
           slot-name: 'Production'
           package: .
+          
