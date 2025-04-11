@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:meu-timbre-app": "node dist/meu-timbre-app/server/server.mjs",
-    "commit": "git add . && git commit -m"
+    "commit": "git add . && git commit -m \"Inclusão da Pasta Dist\""
   },
   "private": true,
   "dependencies": {
