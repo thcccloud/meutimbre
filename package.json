@@ -3,14 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node index.js",
-    "start-local": "ng serve",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:meu-timbre-app": "node dist/meu-timbre-app/server/server.mjs",
-    "git_add": "git add * ",
-    "git_commit": "git commit -m \"Inclusão da Pasta Dist\""
+    "serve:ssr:meu-timbre-app": "node dist/meu-timbre-app/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -40,9 +37,7 @@
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "pre-push": "^0.1.4",
-    "typescript": "~5.7.2"
+    "karma-jasmine-html-reporter": "~2.1.0"
   },
   "pre-push": [
     "build",
