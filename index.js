@@ -6,7 +6,7 @@ const PORT = 8080;
 
 const server = http.createServer((req, res) => {
   if (req.url === '/' || req.url === '/index.html') {
-    const filePath = path.join(__dirname, 'public', 'index.html');
+    const filePath = path.join(__dirname, 'dist/meu-timbre-app/browser', 'index.html');
     fs.readFile(filePath, (err, content) => {
       if (err) {
         res.writeHead(500);
@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
       }
     });
   } else if (req.url === '/styles.css') {
-    const filePath = path.join(__dirname, 'public', 'styles.css');
+    const filePath = path.join(__dirname, 'dist/meu-timbre-app/browser', 'styles.css');
     fs.readFile(filePath, (err, content) => {
       if (err) {
         res.writeHead(500);
