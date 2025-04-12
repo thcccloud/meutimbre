@@ -27,8 +27,8 @@ function App() {
 
             <MDBCardBody>
 
-              <MDBInput wrapperClass='mb-4' label='E-mail' id='form1' type='email'/>
-              <MDBInput wrapperClass='mb-4' label='Senha' id='form2' type='password'/>
+              <MDBInput wrapperClass='mb-4' label='E-mail' id='form1' type='E-mail'/>
+              <MDBInput wrapperClass='mb-4' label='Senha' id='form2' type='Senha'/>
 
               <div className="d-flex justify-content-between mx-4 mb-4">
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Lembra-me' />
