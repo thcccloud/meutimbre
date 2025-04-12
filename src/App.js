@@ -9,7 +9,8 @@ import {
   MDBCol,
   MDBInput,
   MDBCheckbox,
-  MDBCarousel, MDBCarouselItem 
+  MDBCarousel, 
+  MDBCarouselItem 
 }
 from 'mdb-react-ui-kit';
 
@@ -48,6 +49,26 @@ function App() {
               </div>
 
               <MDBBtn className="mb-4 w-100">Entrar</MDBBtn>
+              
+              <div class="text-center">
+                <p>Não é um membro? <a href="#!">Cadastre AQUI</a></p>
+                <p>Siga-nos nas rede sociais</p>
+                <button  data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button  data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button  data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button  data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
 
             </MDBCardBody>
 
