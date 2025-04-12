@@ -8,7 +8,8 @@ import {
   MDBRow,
   MDBCol,
   MDBInput,
-  MDBCheckbox
+  MDBCheckbox,
+  MDBCarousel, MDBCarouselItem 
 }
 from 'mdb-react-ui-kit';
 
@@ -20,7 +21,18 @@ function App() {
         <MDBRow className='g-0 d-flex align-items-center'>
 
           <MDBCol md='4'>
-            <MDBCardImage src='./img/image.png' alt='phone' className='rounded-t-5 rounded-tr-lg-0' fluid />
+            
+            <MDBCarousel showControls showIndicators>
+              <MDBCarouselItem itemId={1}>
+                <MDBCardImage src='./img/image.png' alt='phone' className='rounded-t-5 rounded-tr-lg-0' fluid />
+              </MDBCarouselItem>
+              <MDBCarouselItem itemId={2}>
+                <MDBCardImage src='./img/image2.png' alt='phone' className='rounded-t-5 rounded-tr-lg-0' fluid />
+              </MDBCarouselItem>
+              <MDBCarouselItem itemId={3}>
+                <MDBCardImage src='./img/image3.png' alt='phone' className='rounded-t-5 rounded-tr-lg-0' fluid />
+              </MDBCarouselItem>
+            </MDBCarousel>
           </MDBCol>
 
           <MDBCol md='8'>
